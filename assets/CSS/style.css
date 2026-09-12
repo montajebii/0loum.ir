@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  font-family: Vazirmatn RD UI FD;
+  font-family: "Vazirmatn RD UI FD";
   background: radial-gradient(
     circle at 30% -10%,
     #fff6e6 0%,
@@ -143,7 +143,7 @@ textarea:focus-visible {
 }
 
 .brand-title span {
-  font-family: Vazirmatn RD UI;
+  font-family: "Vazirmatn RD UI FD";
   font-size: 0.85rem;
   color: var(--muted);
   font-weight: 500;
@@ -210,6 +210,7 @@ textarea:focus-visible {
 .btn-primary {
   background: var(--primary);
   color: #fff;
+  font-weight: 700;
   box-shadow: 0 14px 28px rgba(15, 106, 95, 0.25);
 }
 
@@ -254,6 +255,7 @@ textarea:focus-visible {
 
 .hero h1 {
   font-size: clamp(2.4rem, 3.6vw, 3.6rem);
+  font-weight: 700;
   line-height: 1.3;
   margin-bottom: 18px;
 }
@@ -314,6 +316,7 @@ textarea:focus-visible {
 
 .section-title {
   font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
   margin-bottom: 18px;
 }
 
@@ -356,6 +359,7 @@ textarea:focus-visible {
 
 .stat-card strong {
   font-size: 1.6rem;
+  font-weight: 700;
   color: var(--primary-strong);
 }
 
@@ -393,6 +397,7 @@ textarea:focus-visible {
 .feature-card h3 {
   margin-bottom: 4px;
   font-size: 1.16rem;
+  font-weight: 700;
 }
 
 .feature-card p {
@@ -455,6 +460,7 @@ textarea:focus-visible {
 
 .grade-card h3 {
   font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
@@ -497,6 +503,7 @@ textarea:focus-visible {
 
 .media-card h4 {
   font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .tag {
@@ -594,7 +601,7 @@ textarea:focus-visible {
 }
 
 .site-footer {
-  font-family: Vazirmatn RD UI;
+  font-family: "Vazirmatn RD UI FD";
   background: var(--bg-deep);
   color: rgba(255, 255, 255, 0.8);
   padding: 60px 0 30px;
@@ -615,6 +622,7 @@ textarea:focus-visible {
 }
 
 .footer-grid h4 {
+  font-weight: 600;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -867,6 +875,7 @@ textarea:focus-visible {
 
 .bookshelf-section h3 {
   font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 24px;
   padding-bottom: 12px;
   border-bottom: 2px solid rgba(15, 28, 36, 0.08);
@@ -1316,4 +1325,52 @@ textarea:focus-visible {
   .grade-card {
     transition: none;
   }
+}
+
+/* ---------- Vazirmatn RD UI FD (فارسی ارقام) ---------- */
+@font-face {
+  font-family: "Vazirmatn RD UI FD";
+  src: url("../fonts/Vazirmatn/Round-Dots/misc/UI-Farsi-Digits/fonts/webfonts/Vazirmatn-RD-UI-FD-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn RD UI FD";
+  src: url("../fonts/Vazirmatn/Round-Dots/misc/UI-Farsi-Digits/fonts/webfonts/Vazirmatn-RD-UI-FD-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* اگر وزن Medium یا سایر وزن‌ها لازم است، اضافه کنید. مثلاً: */
+@font-face {
+  font-family: "Vazirmatn RD UI FD";
+  src: url("../fonts/Vazirmatn/Round-Dots/misc/UI-Farsi-Digits/fonts/webfonts/Vazirmatn-RD-UI-FD-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Vazirmatn RD UI (بدون ارقام فارسی) ---------- */
+@font-face {
+  font-family: "Vazirmatn RD UI";
+  src: url("../fonts/Vazirmatn/Round-Dots/misc/UI/fonts/webfonts/Vazirmatn-RD-UI-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn RD UI";
+  src: url("../fonts/Vazirmatn/Round-Dots/misc/UI/fonts/webfonts/Vazirmatn-RD-UI-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

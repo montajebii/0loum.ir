@@ -1,311 +1,470 @@
 ﻿<!doctype html>
 <html lang="fa" dir="rtl">
+  <head>
+    <!-- تعیین کدگذاری کاراکترها به UTF-8 برای پشتیبانی از حروف فارسی و کاراکترهای ویژه -->
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>علوم از صفر</title>
-  <meta name="description"
-    content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند." />
-  <meta name="author" content="خان‌پایه" />
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#0f6a5f" />
-  <link rel="canonical" href="https://0loum.ir" />
-  <link rel="icon" type="image/png" href="/assets/images/icons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/images/icons/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preconnect" href="https://plausible.io" />
-  <link rel="stylesheet" href="assets/CSS/style.css" />
-  <meta property="og:title" content="علوم از صفر" />
-  <meta property="og:description"
-    content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://0loum.ir" />
-  <meta property="og:image" content="https://0loum.ir/assets/images/og-image.jpg" />
-  <meta property="og:site_name" content="علوم از صفر" />
-  <meta property="og:locale" content="fa_IR" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="علوم 0" />
-  <meta name="twitter:description"
-    content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند." />
-  <meta name="twitter:image" content="https://0loum.ir/assets/images/og-image.jpg" />
-  <meta name="twitter:site" content="@username" /> <!--Review-->
-  <script defer data-domain="0loum.ir" src="https://plausible.io/js/script.js"></script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "علوم از صفر",
-      "description": "پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
-      "url": "https://0loum.ir",
-      "logo": "https://0loum.ir/assets/images/icons/web-app-manifest-512x512.png"
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "علوم از صفر",
-      "url": "https://0loum.ir",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://0loum.ir/library.html?search={search_term_string}",
-        "query-input": "required name=search_term_string"
+    <!-- تنظیم نمایۀ دید (Viewport) برای نمایش واکنش‌گرا در موبایل و تبلت -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- عنوان صفحه که در تب مرورگر و نتایج جستجو نمایش داده می‌شود -->
+    <title>علوم از صفر</title>
+
+    <!-- توضیح متای صفحه که موتورهای جستجو و شبکه‌های اجتماعی از آن استفاده می‌کنند -->
+    <meta
+      name="description"
+      content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
+    />
+
+    <!-- نام نویسنده یا تولیدکنندۀ محتوا -->
+    <meta name="author" content="خان‌پایه" />
+
+    <!-- دستور به ربات‌های جستجو: صفحه را ایندکس کن و لینک‌های آن را دنبال کن -->
+    <meta name="robots" content="index,follow" />
+
+    <!-- رنگ تم مرورگر در موبایل (مثلاً نوار بالای کروم اندروید) -->
+    <meta name="theme-color" content="#0f6a5f" />
+
+    <!-- آدرس نسخۀ اصلی (Canonical) صفحه برای جلوگیری از محتوای تکراری -->
+    <link rel="canonical" href="https://0loum.ir" />
+
+    <!-- Favicon با اندازه‌های مختلف برای نمایش در مرورگر -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/icons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" />
+
+    <!-- آیکون اپل برای وقتی که سایت به صفحه اصلی آیفون/آیپد اضافه شود -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/icons/apple-touch-icon.png"
+    />
+
+    <!-- تنظیمات نمایش وب‌اپ در iOS: امکان اجرای تمام‌صفحه -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- استایل نوار وضعیت در iOS: شفاف با متن تیره -->
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- قابلیت وب‌اپ در اندروید/کروم -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- فایل manifest برای تعریف نام، آیکون و تنظیمات PWA -->
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- پیش‌اتصال به سرور تحلیلی (Plausible) برای سرعت‌بخشی به درخواست‌های بعدی -->
+    <!--<link rel="preconnect" href="https://plausible.io" />-->
+
+    <!-- لینک دادن فایل‌های CSS -->
+    <link rel="stylesheet" href="assets/CSS/reset.css" />
+    <!-- بازنشانی استایل‌های پیش‌فرض مرورگر -->
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <!-- استایل اصلی سایت -->
+
+    <!-- متا‌های Open Graph برای نمایش بهتر هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک و تلگرام -->
+    <meta property="og:title" content="علوم از صفر" />
+    <meta
+      property="og:description"
+      content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://0loum.ir" />
+    <!--<meta property="og:image" content="https://0loum.ir/assets/images/og-image.jpg" />-->
+    <!--Review: آدرس تصویر باید چک شود -->
+    <meta property="og:site_name" content="علوم از صفر" />
+    <meta property="og:locale" content="fa_IR" />
+
+    <!-- متا‌های Twitter Card برای نمایش بهتر هنگام اشتراک‌گذاری در توییتر -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- کارت با تصویر بزرگ -->
+    <meta name="twitter:title" content="علوم 0" />
+    <meta
+      name="twitter:description"
+      content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
+    />
+    <!--<meta name="twitter:image" content="https://0loum.ir/assets/images/og-image.jpg" />-->
+    <!--Review: آدرس تصویر باید چک شود -->
+    <!--<meta name="twitter:site" content="@username" />-->
+    <!--Review: نام کاربری توییتر باید جایگزین شود -->
+
+    <!-- اسکریپت تحلیل Plausible (غیرفعال شده) -->
+    <!-- <script defer data-domain="0loum.ir" src="https://plausible.io/js/script.js"></script> -->
+
+    <!-- داده‌های ساختاریافتۀ JSON-LD برای سازمان آموزشی -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "علوم از صفر",
+        "description": "پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند.",
+        "url": "https://0loum.ir",
+        "logo": "https://0loum.ir/assets/images/icons/web-app-manifest-512x512.png"
       }
-    }
-  </script>
-</head>
+    </script>
 
-<body>
-  <a class="skip-link" href="#content">رفتن به محتوا</a>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="brand" href="index.html" aria-label="صفحه اصلی">
-        <div class="brand-mark"><svg id="mustache" xmlns="http://www.w3.org/2000/svg" version="1.1"
-            viewBox="0 0 100 100">
-            <defs>
-              <style>
-                .st0 {
-                  fill: #fff;
-                  stroke: #fff;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-width: 4px;
-                }
-              </style>
-            </defs>
-            <path class="st0"
-              d="M45.5,52.8c-.3,0-.8.2-1.3.2-.3,0-.6,0-.8,0-.3,0-.6,0-.8-.1-11.3-.7-23.2,2-34,7.7,1.2-5.2,4.5-14.4,12.5-18.5,4.4-2.3,9.7-2.5,14.8-2.8,1.7,0,3.3-.2,4.9-.3h1.3c1.1,0,2.2.2,3,.5,1.8.8,2.7,2.4,2.5,4.9v2.2c.2,3.3,0,5.7-2.1,6.2Z" />
-            <path class="st0"
-              d="M91.4,60.6c-10.8-5.7-22.7-8.4-34-7.7-.2,0-.5,0-.8.1-.2,0-.5,0-.8,0-.5,0-1-.1-1.3-.2-2.1-.5-2.3-2.9-2.1-6.2v-2.2c-.2-2.6.7-4.2,2.5-4.9.8-.3,1.8-.5,3-.5h1.3c1.6,0,3.2.3,4.9.3,5.1.3,10.5.5,14.8,2.8,8.1,4.1,11.3,13.3,12.5,18.5Z" />
-          </svg></div>
-        <div class="brand-title">علوم از صفر
-          <span>0loum.ir</span>
-        </div>
-      </div>
-      <nav class="main-nav" aria-label="منوی اصلی">
-        <a class="active" href="index.html">خانه</a>
-        <a href="library.html">کتابخانه</a>
-        <a href="about.html">درباره دبیر</a>
-        <a href="contact.html">ارتباط</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn btn-ghost" href="library.html">شروع سریع</a>
-        <a class="btn btn-primary" href="contact.html">ثبت مشاوره</a>
-      </div>
-      <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="باز کردن منو">☰</button>
-    </div>
-  </header>
+    <!-- داده‌های ساختاریافتۀ JSON-LD برای وبسایت و جستجوی داخلی -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "علوم از صفر",
+        "url": "https://0loum.ir",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://0loum.ir/library.html?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
 
-  <div class="mobile-panel" data-mobile-panel>
-    <button class="mobile-panel-close" aria-label="بستن منو">✕</button>
-    <nav aria-label="منوی موبایل">
-      <a href="index.html">خانه</a>
-      <a href="library.html">کتابخانه</a>
-      <a href="about.html">درباره دبیر</a>
-      <a href="contact.html">ارتباط</a>
-      <a class="btn btn-primary consultation-btn" href="contact.html">ثبت مشاوره</a>
-    </nav>
-  </div>
-
-  <main id="content">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <h1>علوم از صفر تا 100!</h1>
-          <p>یادگیری مفهومی با ویدیو، جزوه و تمرین هدفمند.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="library.html">ورود به کتابخانه محتوا</a>
-            <a class="btn btn-ghost" href="#tracks">مسیرهای یادگیری</a>
+  <body>
+    <a class="skip-link" href="#content">رفتن به محتوا</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <div class="brand" href="index.html" aria-label="صفحه اصلی">
+          <div class="brand-mark">
+            <svg
+              id="mustache"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 100 100"
+            >
+              <defs>
+                <style>
+                  .st0 {
+                    fill: #fff;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 4px;
+                  }
+                </style>
+              </defs>
+              <path
+                class="st0"
+                d="M45.5,52.8c-.3,0-.8.2-1.3.2-.3,0-.6,0-.8,0-.3,0-.6,0-.8-.1-11.3-.7-23.2,2-34,7.7,1.2-5.2,4.5-14.4,12.5-18.5,4.4-2.3,9.7-2.5,14.8-2.8,1.7,0,3.3-.2,4.9-.3h1.3c1.1,0,2.2.2,3,.5,1.8.8,2.7,2.4,2.5,4.9v2.2c.2,3.3,0,5.7-2.1,6.2Z"
+              />
+              <path
+                class="st0"
+                d="M91.4,60.6c-10.8-5.7-22.7-8.4-34-7.7-.2,0-.5,0-.8.1-.2,0-.5,0-.8,0-.5,0-1-.1-1.3-.2-2.1-.5-2.3-2.9-2.1-6.2v-2.2c-.2-2.6.7-4.2,2.5-4.9.8-.3,1.8-.5,3-.5h1.3c1.6,0,3.2.3,4.9.3,5.1.3,10.5.5,14.8,2.8,8.1,4.1,11.3,13.3,12.5,18.5Z"
+              />
+            </svg>
+          </div>
+          <div class="brand-title">
+            علوم از صفر
+            <span>0loum.ir</span>
           </div>
         </div>
-        <div class="hero-card reveal">
-          <span class="hero-badge">بیش از 120 رسانه آموزشی</span>
-          <img src="assets/images/hero.jpg" alt="دبیر علوم در حال آموزش" loading="lazy" />
-        </div>
-      </div>
-      <div class="hero-bg" aria-hidden="true"></div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <h2 class="section-title">چرا از صفر؟</h2>
-        <p class="section-subtitle">همه چیز برای یادگیری آماده است: ویدیو، جزوه و تمرین.</p>
-        <div class="stats">
-          <div class="stat-card reveal">
-            <strong>تعدادی</strong>
-            <span>ویدیو بلند آموزشی </span>
-          </div>
-          <div class="stat-card reveal">
-            <strong>تعدادی</strong>
-            <span>ویدیو کوتاه آموزشی </span>
-          </div>
-          <div class="stat-card reveal">
-            <strong>30</strong>
-            <span>جزوه و درس‌نامه</span>
-          </div>
-          <div class="stat-card reveal">
-            <strong>تعدادی</strong>
-            <span>تمرین و نمونه‌سوال با پاسخ‌نامه</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <h2 class="section-title">چرا تا 100؟</h2>
-        <p class="section-subtitle">بهانه‌ای برای یادنگرفتن نیست.</p>
-        <div class="grid-3">
-          <article class="feature-card reveal">
-            <!--div class="feature-icon">🎯</div-->
-            <h3>یادگیری مفهومی</h3>
-            <p>تمرکز روی فهم چرایی و چگونگی پدیده‌ها، نه حفظ کردن سطحی.</p>
-          </article>
-          <article class="feature-card reveal">
-            <!--div class="feature-icon">🧪</div-->
-            <h3>آزمایش محور</h3>
-            <p>ویدیوها و تمرین‌ها با مثال‌های واقعی و آزمایش‌های ساده طراحی شده‌اند.</p>
-          </article>
-          <article class="feature-card reveal">
-            <!--div class="feature-icon">📚</div-->
-            <h3>جزوه‌های حرفه‌ای</h3>
-            <p>جزوه‌های طبقه‌بندی‌شده برای مرور سریع، آمادگی آزمون و جمع‌بندی.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tracks">
-      <div class="wrap">
-        <h2 class="section-title">مسیرهای یادگیری</h2>
-        <p class="section-subtitle">هر پایه مسیر اختصاصی خودش را دارد؛ از مفاهیم پایه تا مرورهای آزمون‌محور.</p>
-        <div class="grade-grid">
-          <article class="grade-card reveal">
-            <h3>پایه هفتم</h3>
-            <p>شروع جذاب با مفاهیم بنیادی، آزمایش‌های ساده و تقویت مهارت مشاهده و تحلیل.</p>
-            <a class="btn btn-ghost" href="library.html?path=grade-7">مشاهده محتوا</a>
-          </article>
-          <article class="grade-card reveal">
-            <h3>پایه هشتم</h3>
-            <p>ترکیب مفاهیم پیچیده‌تر با تمرین‌های طبقه‌بندی‌شده برای تثبیت مطالب.</p>
-            <a class="btn btn-ghost" href="library.html?path=grade-8">مشاهده محتوا</a>
-          </article>
-          <article class="grade-card reveal">
-            <h3>پایه نهم</h3>
-            <p>مرور کامل سال‌های گذشته + آمادگی هدفمند برای امتحانات پایان ترم.</p>
-            <a class="btn btn-ghost" href="library.html?path=grade-9">مشاهده محتوا</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <h2 class="section-title">نمونه‌ای از رسانه‌ها</h2>
-        <p class="section-subtitle">گزیده‌ای از محتواهای پرطرفدار برای شروع سریع.</p>
-        <div class="media-grid">
-          <article class="media-card reveal">
-            <span>ویدیو 12 دقیقه‌ای</span>
-            <h4>نیروهای وارد بر جسم در حرکت</h4>
-            <p>تحلیل قدم‌به‌قدم نیروها با انیمیشن‌های ساده و مثال‌های ملموس.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="video-player.html?id=forces-1">پخش ویدیو</a>
-              <a class="btn btn-ghost" href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(1).pdf">جزوه مرتبط</a>
-            </div>
-            <div class="tag">پایه هشتم</div>
-          </article>
-          <article class="media-card reveal">
-            <span>جزوه 8 صفحه‌ای</span>
-            <h4>چرخه‌های مواد در طبیعت</h4>
-            <p>خلاصه درس + سوالات پرتکرار امتحانی برای مرور سریع.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(2).pdf">دانلود جزوه</a>
-              <a class="btn btn-ghost" href="library.html?path=grade-7&type=notes">جزوه‌های بیشتر</a>
-            </div>
-            <div class="tag">پایه هفتم</div>
-          </article>
-          <article class="media-card reveal">
-            <span>ویدیو 18 دقیقه‌ای</span>
-            <h4>الکتریسیته و مدارها</h4>
-            <p>ترکیب مفاهیم با تمرین‌های حل‌شده و نکات امتحانی.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="video-player.html?id=static-electricity">پخش ویدیو</a>
-              <a class="btn btn-ghost" href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(7).pdf">جزوه مرتبط</a>
-            </div>
-            <div class="tag">پایه هفتم</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <h2 class="section-title">سوالات پرتکرار</h2>
-        <div class="faq">
-          <details class="reveal">
-            <summary>چطور به محتواها دسترسی پیدا کنم؟</summary>
-            <p>کافی است وارد کتابخانه شوید و بر اساس پایه و موضوع، ویدیو یا جزوه موردنظر را انتخاب کنید.</p>
-          </details>
-          <details class="reveal">
-            <summary>آیا محتواها مطابق آخرین کتاب درسی است؟</summary>
-            <p>بله، همه منابع بر اساس آخرین تغییرات کتاب علوم متوسطه اول تدوین شده‌اند.</p>
-          </details>
-          <details class="reveal">
-            <summary>چطور سوالاتم را مطرح کنم؟</summary>
-            <p>از طریق فرم تماس یا پیام‌رسان‌های معرفی‌شده می‌توانید سوالات خود را ارسال کنید.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="cta reveal">
-          <h2>آماده‌ای مسیر یادگیریت رو شروع کنی؟</h2>
-          <p>به کتابخانه خان‌پایه برو و اولین درس را همین امروز ببین.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="library.html">ورود به کتابخانه</a>
-            <a class="btn btn-ghost" href="contact.html">درخواست مشاوره</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <h4>علوم از صفر</h4>
-          <p>پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند.</p>
-        </div>
-        <div>
-          <h4>دسترسی سریع</h4>
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <a class="active" href="index.html">خانه</a>
           <a href="library.html">کتابخانه</a>
           <a href="about.html">درباره دبیر</a>
           <a href="contact.html">ارتباط</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-ghost" href="library.html">شروع سریع</a>
+          <a class="btn btn-primary" href="contact.html">ثبت مشاوره</a>
         </div>
-        <div>
-          <h4>راه‌های ارتباطی</h4>
-          <a href="mailto:Khanepaye.0loum@gmail.com">Khanepaye.0loum@gmail.com</a>
-          <a href="tel:+989000000000">+98 900 000 0000</a>
-          <a><span>هرمزگان، بندرعباس</span></a>
-        </div>
+        <button
+          class="mobile-toggle"
+          type="button"
+          data-mobile-toggle
+          aria-label="باز کردن منو"
+        >
+          ☰
+        </button>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year></span> خان‌پایه. همه حقوق محفوظ است.</span>
-        <span>زیرا که به عدالت آموزشی سوگند خورده‌ایم.</span>
-      </div>
+    </header>
+
+    <div class="mobile-panel" data-mobile-panel>
+      <button class="mobile-panel-close" aria-label="بستن منو">✕</button>
+      <nav aria-label="منوی موبایل">
+        <a href="index.html">خانه</a>
+        <a href="library.html">کتابخانه</a>
+        <a href="about.html">درباره دبیر</a>
+        <a href="contact.html">ارتباط</a>
+        <a class="btn btn-primary consultation-btn" href="contact.html"
+          >ثبت مشاوره</a
+        >
+      </nav>
     </div>
-  </footer>
 
-  <script src="assets/JS/main.js"></script>
-</body>
+    <main id="content">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <h1>علوم از صفر تا 100!</h1>
+            <p>یادگیری مفهومی با ویدیو، جزوه و تمرین هدفمند.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="library.html"
+                >ورود به کتابخانه محتوا</a
+              >
+              <a class="btn btn-ghost" href="#tracks">مسیرهای یادگیری</a>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+            <span class="hero-badge">بیش از 120 رسانه آموزشی</span>
+            <img
+              src="assets/images/hero.jpg"
+              alt="دبیر علوم در حال آموزش"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
 
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title">چرا از صفر؟</h2>
+          <p class="section-subtitle">
+            همه چیز برای یادگیری آماده است: ویدیو، جزوه و تمرین.
+          </p>
+          <div class="stats">
+            <div class="stat-card reveal">
+              <strong>تعدادی</strong>
+              <span>ویدیو بلند آموزشی </span>
+            </div>
+            <div class="stat-card reveal">
+              <strong>تعدادی</strong>
+              <span>ویدیو کوتاه آموزشی </span>
+            </div>
+            <div class="stat-card reveal">
+              <strong>30</strong>
+              <span>جزوه و درس‌نامه</span>
+            </div>
+            <div class="stat-card reveal">
+              <strong>تعدادی</strong>
+              <span>تمرین و نمونه‌سوال با پاسخ‌نامه</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title">چرا تا 100؟</h2>
+          <p class="section-subtitle">بهانه‌ای برای یادنگرفتن نیست.</p>
+          <div class="grid-3">
+            <article class="feature-card reveal">
+              <!--div class="feature-icon">🎯</div-->
+              <h3>یادگیری مفهومی</h3>
+              <p>تمرکز روی فهم چرایی و چگونگی پدیده‌ها، نه حفظ کردن سطحی.</p>
+            </article>
+            <article class="feature-card reveal">
+              <!--div class="feature-icon">🧪</div-->
+              <h3>آزمایش محور</h3>
+              <p>
+                ویدیوها و تمرین‌ها با مثال‌های واقعی و آزمایش‌های ساده طراحی
+                شده‌اند.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <!--div class="feature-icon">📚</div-->
+              <h3>جزوه‌های حرفه‌ای</h3>
+              <p>
+                جزوه‌های طبقه‌بندی‌شده برای مرور سریع، آمادگی آزمون و جمع‌بندی.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tracks">
+        <div class="wrap">
+          <h2 class="section-title">مسیرهای یادگیری</h2>
+          <p class="section-subtitle">
+            هر پایه مسیر اختصاصی خودش را دارد؛ از مفاهیم پایه تا مرورهای
+            آزمون‌محور.
+          </p>
+          <div class="grade-grid">
+            <article class="grade-card reveal">
+              <h3>پایه هفتم</h3>
+              <p>
+                شروع جذاب با مفاهیم بنیادی، آزمایش‌های ساده و تقویت مهارت مشاهده
+                و تحلیل.
+              </p>
+              <a class="btn btn-ghost" href="library.html?path=grade-7"
+                >مشاهده محتوا</a
+              >
+            </article>
+            <article class="grade-card reveal">
+              <h3>پایه هشتم</h3>
+              <p>
+                ترکیب مفاهیم پیچیده‌تر با تمرین‌های طبقه‌بندی‌شده برای تثبیت
+                مطالب.
+              </p>
+              <a class="btn btn-ghost" href="library.html?path=grade-8"
+                >مشاهده محتوا</a
+              >
+            </article>
+            <article class="grade-card reveal">
+              <h3>پایه نهم</h3>
+              <p>
+                مرور کامل سال‌های گذشته + آمادگی هدفمند برای امتحانات پایان ترم.
+              </p>
+              <a class="btn btn-ghost" href="library.html?path=grade-9"
+                >مشاهده محتوا</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title">نمونه‌ای از رسانه‌ها</h2>
+          <p class="section-subtitle">
+            گزیده‌ای از محتواهای پرطرفدار برای شروع سریع.
+          </p>
+          <div class="media-grid">
+            <article class="media-card reveal">
+              <span>ویدیو 12 دقیقه‌ای</span>
+              <h4>نیروهای وارد بر جسم در حرکت</h4>
+              <p>
+                تحلیل قدم‌به‌قدم نیروها با انیمیشن‌های ساده و مثال‌های ملموس.
+              </p>
+              <div class="actions">
+                <a class="btn btn-primary" href="video-player.html?id=forces-1"
+                  >پخش ویدیو</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(1).pdf"
+                  >جزوه مرتبط</a
+                >
+              </div>
+              <div class="tag">پایه هشتم</div>
+            </article>
+            <article class="media-card reveal">
+              <span>جزوه 8 صفحه‌ای</span>
+              <h4>چرخه‌های مواد در طبیعت</h4>
+              <p>خلاصه درس + سوالات پرتکرار امتحانی برای مرور سریع.</p>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(2).pdf"
+                  >دانلود جزوه</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="library.html?path=grade-7&type=notes"
+                  >جزوه‌های بیشتر</a
+                >
+              </div>
+              <div class="tag">پایه هفتم</div>
+            </article>
+            <article class="media-card reveal">
+              <span>ویدیو 18 دقیقه‌ای</span>
+              <h4>الکتریسیته و مدارها</h4>
+              <p>ترکیب مفاهیم با تمرین‌های حل‌شده و نکات امتحانی.</p>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="video-player.html?id=static-electricity"
+                  >پخش ویدیو</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(7).pdf"
+                  >جزوه مرتبط</a
+                >
+              </div>
+              <div class="tag">پایه هفتم</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title">سوالات پرتکرار</h2>
+          <div class="faq">
+            <details class="reveal">
+              <summary>چطور به محتواها دسترسی پیدا کنم؟</summary>
+              <p>
+                کافی است وارد کتابخانه شوید و بر اساس پایه و موضوع، ویدیو یا
+                جزوه موردنظر را انتخاب کنید.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>آیا محتواها مطابق آخرین کتاب درسی است؟</summary>
+              <p>
+                بله، همه منابع بر اساس آخرین تغییرات کتاب علوم متوسطه اول تدوین
+                شده‌اند.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>چطور سوالاتم را مطرح کنم؟</summary>
+              <p>
+                از طریق فرم تماس یا پیام‌رسان‌های معرفی‌شده می‌توانید سوالات خود
+                را ارسال کنید.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="cta reveal">
+            <h2>آماده‌ای مسیر یادگیریت رو شروع کنی؟</h2>
+            <p>به کتابخانه خان‌پایه برو و اولین درس را همین امروز ببین.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="library.html"
+                >ورود به کتابخانه</a
+              >
+              <a class="btn btn-ghost" href="contact.html">درخواست مشاوره</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h4>علوم از صفر</h4>
+            <p>
+              پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های
+              طبقه‌بندی‌شده و تمرین‌های هدفمند.
+            </p>
+          </div>
+          <div>
+            <h4>دسترسی سریع</h4>
+            <a href="library.html">کتابخانه</a>
+            <a href="about.html">درباره دبیر</a>
+            <a href="contact.html">ارتباط</a>
+          </div>
+          <div>
+            <h4>راه‌های ارتباطی</h4>
+            <a href="mailto:Khanepaye.0loum@gmail.com"
+              >Khanepaye.0loum@gmail.com</a
+            >
+            <a href="tel:+989000000000">+98 900 000 0000</a>
+            <a><span>هرمزگان، بندرعباس</span></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year></span> خان‌پایه. همه حقوق محفوظ است.</span>
+          <span>زیرا که به عدالت آموزشی سوگند خورده‌ایم.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/JS/main.js"></script>
+  </body>
 </html>
