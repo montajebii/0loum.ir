@@ -1,140 +1,459 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fa" dir="rtl">
   <head>
-    <!-- تعیین کدگذاری کاراکترها به UTF-8 برای پشتیبانی از حروف فارسی و کاراکترهای ویژه -->
     <meta charset="utf-8" />
-
-    <!-- تنظیم نمایۀ دید (Viewport) برای نمایش واکنش‌گرا در موبایل و تبلت -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <!-- عنوان صفحه که در تب مرورگر و نتایج جستجو نمایش داده می‌شود -->
-    <title>علوم از صفر</title>
-
-    <!-- توضیح متای صفحه که موتورهای جستجو و شبکه‌های اجتماعی از آن استفاده می‌کنند -->
+    <title>شبکه‌های اجتماعی | علوم از صفر</title>
     <meta
       name="description"
-      content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
+      content="تمام راه‌های ارتباطی و شبکه‌های اجتماعی علوم از صفر در یک صفحه؛ ما را در پیام‌رسان‌ها و پلتفرم‌های مختلف دنبال کنید."
     />
-
-    <!-- نام نویسنده یا تولیدکنندۀ محتوا -->
     <meta name="author" content="خان‌پایه" />
-
-    <!-- دستور به ربات‌های جستجو: صفحه را ایندکس کن و لینک‌های آن را دنبال کن -->
     <meta name="robots" content="index,follow" />
-
-    <!-- رنگ تم مرورگر در موبایل (مثلاً نوار بالای کروم اندروید) -->
     <meta name="theme-color" content="#0f6a5f" />
-
-    <!-- آدرس نسخۀ اصلی (Canonical) صفحه برای جلوگیری از محتوای تکراری -->
-    <link rel="canonical" href="https://0loum.ir" />
-
-    <!-- Favicon با اندازه‌های مختلف برای نمایش در مرورگر -->
+    <link rel="canonical" href="https://links.0loum.ir" />
     <link
       rel="icon"
       type="image/png"
-      href="/assets/images/icons/favicon-96x96.png"
+      href="../assets/images/icons/favicon-96x96.png"
       sizes="96x96"
     />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/assets/images/icons/favicon.svg"
+      href="../assets/images/icons/favicon.svg"
     />
-    <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" />
-
-    <!-- آیکون اپل برای وقتی که سایت به صفحه اصلی آیفون/آیپد اضافه شود -->
+    <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/images/icons/apple-touch-icon.png"
+      href="../assets/images/icons/apple-touch-icon.png"
     />
-
-    <!-- تنظیمات نمایش وب‌اپ در iOS: امکان اجرای تمام‌صفحه -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!-- استایل نوار وضعیت در iOS: شفاف با متن تیره -->
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-
-    <!-- قابلیت وب‌اپ در اندروید/کروم -->
     <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="../site.webmanifest" />
 
-    <!-- فایل manifest برای تعریف نام، آیکون و تنظیمات PWA -->
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- پیش‌اتصال به سرور تحلیلی (Plausible) برای سرعت‌بخشی به درخواست‌های بعدی -->
-    <!--<link rel="preconnect" href="https://plausible.io" />-->
-
-    <!-- لینک دادن فایل‌های CSS -->
-    <link rel="stylesheet" href="assets/CSS/reset.css" />
-    <!-- بازنشانی استایل‌های پیش‌فرض مرورگر -->
-    <link rel="stylesheet" href="assets/CSS/style.css" />
-    <!-- استایل اصلی سایت -->
-
-    <!-- متا‌های Open Graph برای نمایش بهتر هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک و تلگرام -->
-    <meta property="og:title" content="علوم از صفر" />
-    <meta
-      property="og:description"
-      content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
+    <!-- فونت‌های وزیرمتن (همان فونت‌های سایت اصلی) -->
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/Vazirmatn/Round-Dots/misc/UI-Farsi-Digits/Vazirmatn-RD-UI-FD-font-face.css"
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://0loum.ir" />
-    <!--<meta property="og:image" content="https://0loum.ir/assets/images/og-image.jpg" />-->
-    <!--Review: آدرس تصویر باید چک شود -->
-    <meta property="og:site_name" content="علوم از صفر" />
-    <meta property="og:locale" content="fa_IR" />
-
-    <!-- متا‌های Twitter Card برای نمایش بهتر هنگام اشتراک‌گذاری در توییتر -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- کارت با تصویر بزرگ -->
-    <meta name="twitter:title" content="علوم 0" />
-    <meta
-      name="twitter:description"
-      content="پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند."
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/Vazirmatn/Round-Dots/misc/UI/Vazirmatn-RD-UI-font-face.css"
     />
-    <!--<meta name="twitter:image" content="https://0loum.ir/assets/images/og-image.jpg" />-->
-    <!--Review: آدرس تصویر باید چک شود -->
-    <!--<meta name="twitter:site" content="@username" />-->
-    <!--Review: نام کاربری توییتر باید جایگزین شود -->
 
-    <!-- اسکریپت تحلیل Plausible (غیرفعال شده) -->
-    <!-- <script defer data-domain="0loum.ir" src="https://plausible.io/js/script.js"></script> -->
+    <link rel="stylesheet" href="../assets/CSS/reset.css" />
 
-    <!-- داده‌های ساختاریافتۀ JSON-LD برای سازمان آموزشی -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "علوم از صفر",
-        "description": "پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های طبقه‌بندی‌شده و تمرین‌های هدفمند.",
-        "url": "https://0loum.ir",
-        "logo": "https://0loum.ir/assets/images/icons/web-app-manifest-512x512.png"
+    <!-- استایل اصلی سایت (برای توکن‌های طراحی و استایل‌های پایه) -->
+    <link rel="stylesheet" href="../assets/CSS/style.css" />
+
+    <!-- استایل‌های اختصاصی صفحه لینک -->
+    <style>
+      :root {
+        --links-max-width: 620px;
+        --card-gap: 16px;
       }
-    </script>
 
-    <!-- داده‌های ساختاریافتۀ JSON-LD برای وبسایت و جستجوی داخلی -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "علوم از صفر",
-        "url": "https://0loum.ir",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://0loum.ir/library.html?search={search_term_string}",
-          "query-input": "required name=search_term_string"
+      /* بازنویسی بک‌گراند برای تطابق با سایت اصلی */
+      body {
+        background: radial-gradient(
+          circle at 30% -10%,
+          #fff6e6 0%,
+          #f7f4ef 45%,
+          #edf0f2 100%
+        );
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* هدر ساده‌شده */
+      .links-header {
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        background: rgba(247, 244, 239, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(15, 28, 36, 0.08);
+        padding: 16px 0;
+      }
+
+      .links-header-inner {
+        width: min(100% - 40px, var(--links-max-width));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .links-brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .links-brand-mark {
+        width: 50px;
+        height: 50px;
+        border-radius: 16px;
+        background: linear-gradient(140deg, var(--primary), #22a296);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 12px 20px rgba(15, 106, 95, 0.25);
+        flex-shrink: 0;
+      }
+
+      .links-brand-mark svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .links-brand-title {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.4;
+      }
+
+      .links-brand-title span {
+        font-family: Vazirmatn RD UI;
+        font-size: 0.82rem;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      /* محتوای اصلی */
+      .links-main {
+        flex: 1;
+        padding: 40px 0 60px;
+      }
+
+      .links-container {
+        width: min(100% - 40px, var(--links-max-width));
+        margin: 0 auto;
+      }
+
+      .links-intro {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+
+      .links-intro h1 {
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        margin-bottom: 10px;
+        color: var(--ink);
+      }
+
+      .links-intro p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      /* کارت‌های لینک */
+      .links-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--card-gap);
+      }
+
+      .link-card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        padding: 18px 22px;
+        box-shadow: 0 12px 28px rgba(13, 25, 33, 0.08);
+        border: 1px solid rgba(15, 28, 36, 0.05);
+        text-decoration: none;
+        color: var(--ink);
+        transition:
+          transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1),
+          box-shadow 250ms ease,
+          border-color 250ms ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .link-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        transition: width 250ms ease;
+      }
+
+      .link-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 45px rgba(13, 25, 33, 0.16);
+        border-color: rgba(15, 106, 95, 0.15);
+      }
+
+      .link-card:hover::before {
+        width: 8px;
+      }
+
+      .link-card:active {
+        transform: translateY(-2px) scale(0.99);
+      }
+
+      /* رنگ‌بندی متنوع برای نوار کناری کارت‌ها */
+      .link-card.card-telegram::before {
+        background: #0088cc;
+      }
+
+      .link-card.card-instagram::before {
+        background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      }
+
+      .link-card.card-youtube::before {
+        background: #ff0000;
+      }
+
+      .link-card.card-aparat::before {
+        background: #ed145b;
+      }
+
+      .link-card.card-eitaa::before {
+        background: #ff8c00;
+      }
+
+      .link-card.card-bale::before {
+        background: #00bfa5;
+      }
+
+      .link-card.card-rubika::before {
+        background: #00bfd6;
+      }
+
+      .link-card.card-whatsapp::before {
+        background: #25d366;
+      }
+
+      .link-card.card-email::before {
+        background: var(--primary);
+      }
+
+      .link-card.card-website::before {
+        background: var(--accent);
+      }
+
+      .link-card.card-default::before {
+        background: var(--primary);
+      }
+
+      /* آیکون داخل کارت */
+      .link-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        font-size: 1.6rem;
+        flex-shrink: 0;
+        background: rgba(15, 106, 95, 0.08);
+      }
+
+      .link-card.card-telegram .link-card-icon {
+        background: rgba(0, 136, 204, 0.1);
+      }
+
+      .link-card.card-instagram .link-card-icon {
+        background: rgba(131, 58, 180, 0.08);
+      }
+
+      .link-card.card-youtube .link-card-icon {
+        background: rgba(255, 0, 0, 0.08);
+      }
+
+      .link-card.card-aparat .link-card-icon {
+        background: rgba(237, 20, 91, 0.08);
+      }
+
+      .link-card.card-eitaa .link-card-icon {
+        background: rgba(255, 140, 0, 0.08);
+      }
+
+      .link-card.card-bale .link-card-icon {
+        background: rgba(0, 191, 165, 0.08);
+      }
+
+      .link-card.card-rubika .link-card-icon {
+        background: rgba(0, 191, 214, 0.08);
+      }
+
+      .link-card.card-whatsapp .link-card-icon {
+        background: rgba(37, 211, 102, 0.08);
+      }
+
+      .link-card.card-email .link-card-icon {
+        background: rgba(15, 106, 95, 0.1);
+      }
+
+      .link-card.card-website .link-card-icon {
+        background: rgba(243, 156, 56, 0.1);
+      }
+
+      /* متن داخل کارت */
+      .link-card-body {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .link-card-title {
+        font-weight: 700;
+        font-size: 1.05rem;
+        margin-bottom: 2px;
+        color: var(--ink);
+      }
+
+      .link-card-desc {
+        font-size: 0.85rem;
+        color: var(--muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* فلش راهنما */
+      .link-card-arrow {
+        flex-shrink: 0;
+        color: var(--muted);
+        font-size: 1.2rem;
+        transition: transform 250ms ease;
+      }
+
+      .link-card:hover .link-card-arrow {
+        transform: translateX(6px);
+        color: var(--primary);
+      }
+
+      /* بخش انتهایی */
+      .links-footer-note {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.8;
+      }
+
+      .links-footer-note a {
+        color: var(--primary);
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .links-footer-note a:hover {
+        color: var(--primary-strong);
+      }
+
+      /* فوتر */
+      .links-page-footer {
+        background: var(--bg-deep);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 24px 0;
+        text-align: center;
+        font-family: Vazirmatn RD UI;
+        font-size: 0.85rem;
+      }
+
+      .links-page-footer span {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      /* ریسپانسیو */
+      @media (max-width: 600px) {
+        .link-card {
+          padding: 14px 16px;
+          gap: 12px;
+        }
+
+        .link-card-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 1.3rem;
+          border-radius: 12px;
+        }
+
+        .link-card-title {
+          font-size: 0.95rem;
+        }
+
+        .link-card-desc {
+          font-size: 0.78rem;
+        }
+
+        .links-intro {
+          margin-bottom: 24px;
+        }
+
+        .links-main {
+          padding: 28px 0 40px;
         }
       }
-    </script>
+
+      @media (prefers-reduced-motion: reduce) {
+        .link-card {
+          transition: none;
+        }
+
+        .link-card:hover .link-card-arrow {
+          transform: none;
+        }
+      }
+      .link-card.card-telegram {
+        display: none;
+      }
+      .link-card.card-instagram {
+        display: none;
+      }
+      .link-card.card-youtube {
+        display: none;
+      }
+      .link-card.card-eitaa {
+        display: none;
+      }
+      .link-card.card-whatsapp {
+        display: none;
+      }
+      .link-card.link-card.card-email {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
-    <a class="skip-link" href="#content">رفتن به محتوا</a>
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <div class="brand" href="index.html" aria-label="صفحه اصلی">
-          <div class="brand-mark">
+    <!-- لینک پرش به محتوا برای دسترسی‌پذیری -->
+    <a class="skip-link" href="#links-content">رفتن به محتوا</a>
+
+    <!-- هدر -->
+    <header class="links-header">
+      <div class="links-header-inner">
+        <a
+          class="links-brand"
+          href="https://0loum.ir"
+          aria-label="بازگشت به سایت اصلی علوم از صفر"
+        >
+          <div class="links-brand-mark">
+            <!-- همان آیکون سبیل سایت اصلی -->
             <svg
               id="mustache"
               xmlns="http://www.w3.org/2000/svg"
@@ -162,309 +481,223 @@
               />
             </svg>
           </div>
-          <div class="brand-title">
+          <div class="links-brand-title">
             علوم از صفر
             <span>0loum.ir</span>
           </div>
-        </div>
-        <nav class="main-nav" aria-label="منوی اصلی">
-          <a class="active" href="index.html">خانه</a>
-          <a href="library.html">کتابخانه</a>
-          <a href="about.html">درباره دبیر</a>
-          <a href="contact.html">ارتباط</a>
-        </nav>
-        <div class="header-actions">
-          <a class="btn btn-ghost" href="library.html">شروع سریع</a>
-          <a class="btn btn-primary" href="contact.html">ثبت مشاوره</a>
-        </div>
-        <button
-          class="mobile-toggle"
-          type="button"
-          data-mobile-toggle
-          aria-label="باز کردن منو"
-        >
-          ☰
-        </button>
+        </a>
       </div>
     </header>
 
-    <div class="mobile-panel" data-mobile-panel>
-      <button class="mobile-panel-close" aria-label="بستن منو">✕</button>
-      <nav aria-label="منوی موبایل">
-        <a href="index.html">خانه</a>
-        <a href="library.html">کتابخانه</a>
-        <a href="about.html">درباره دبیر</a>
-        <a href="contact.html">ارتباط</a>
-        <a class="btn btn-primary consultation-btn" href="contact.html"
-          >ثبت مشاوره</a
-        >
-      </nav>
-    </div>
-
-    <main id="content">
-      <section class="hero">
-        <div class="wrap hero-grid">
-          <div>
-            <h1>علوم از صفر تا 100!</h1>
-            <p>یادگیری مفهومی با ویدیو، جزوه و تمرین هدفمند.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="library.html"
-                >ورود به کتابخانه محتوا</a
-              >
-              <a class="btn btn-ghost" href="#tracks">مسیرهای یادگیری</a>
-            </div>
-          </div>
-          <div class="hero-card reveal">
-            <span class="hero-badge">بیش از 120 رسانه آموزشی</span>
-            <img
-              src="assets/images/hero.jpg"
-              alt="دبیر علوم در حال آموزش"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div class="hero-bg" aria-hidden="true"></div>
-      </section>
-
-      <section class="section">
-        <div class="wrap">
-          <h2 class="section-title">چرا از صفر؟</h2>
-          <p class="section-subtitle">
-            همه چیز برای یادگیری آماده است: ویدیو، جزوه و تمرین.
+    <!-- محتوای اصلی -->
+    <main class="links-main" id="links-content">
+      <div class="links-container">
+        <!-- متن معرفی -->
+        <div class="links-intro">
+          <h1>📡 شبکه‌های اجتماعی علوم از صفر</h1>
+          <p>
+            ما را در پیام‌رسان‌ها و پلتفرم‌های مختلف دنبال کنید.<br />آموزش علوم
+            متوسطه اول، همیشه در دسترس.
           </p>
-          <div class="stats">
-            <div class="stat-card reveal">
-              <strong>تعدادی</strong>
-              <span>ویدیو بلند آموزشی </span>
-            </div>
-            <div class="stat-card reveal">
-              <strong>تعدادی</strong>
-              <span>ویدیو کوتاه آموزشی </span>
-            </div>
-            <div class="stat-card reveal">
-              <strong>30</strong>
-              <span>جزوه و درس‌نامه</span>
-            </div>
-            <div class="stat-card reveal">
-              <strong>تعدادی</strong>
-              <span>تمرین و نمونه‌سوال با پاسخ‌نامه</span>
-            </div>
-          </div>
         </div>
-      </section>
 
-      <section class="section">
-        <div class="wrap">
-          <h2 class="section-title">چرا تا 100؟</h2>
-          <p class="section-subtitle">بهانه‌ای برای یادنگرفتن نیست.</p>
-          <div class="grid-3">
-            <article class="feature-card reveal">
-              <!--div class="feature-icon">🎯</div-->
-              <h3>یادگیری مفهومی</h3>
-              <p>تمرکز روی فهم چرایی و چگونگی پدیده‌ها، نه حفظ کردن سطحی.</p>
-            </article>
-            <article class="feature-card reveal">
-              <!--div class="feature-icon">🧪</div-->
-              <h3>آزمایش محور</h3>
-              <p>
-                ویدیوها و تمرین‌ها با مثال‌های واقعی و آزمایش‌های ساده طراحی
-                شده‌اند.
-              </p>
-            </article>
-            <article class="feature-card reveal">
-              <!--div class="feature-icon">📚</div-->
-              <h3>جزوه‌های حرفه‌ای</h3>
-              <p>
-                جزوه‌های طبقه‌بندی‌شده برای مرور سریع، آمادگی آزمون و جمع‌بندی.
-              </p>
-            </article>
-          </div>
+        <!-- لیست لینک‌ها -->
+        <div class="links-list">
+          <!-- تلگرام -->
+          <a
+            class="link-card card-telegram"
+            href="https://t.me/0loum"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">📬</div>
+            <div class="link-card-body">
+              <div class="link-card-title">تلگرام</div>
+              <div class="link-card-desc">
+                کانال رسمی علوم از صفر | جزوه‌ها، ویدیوها و اطلاعیه‌ها
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- اینستاگرام -->
+          <a
+            class="link-card card-instagram"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">📷</div>
+            <div class="link-card-body">
+              <div class="link-card-title">اینستاگرام</div>
+              <div class="link-card-desc">
+                کلیپ‌های آموزشی کوتاه، استوری‌های علمی و نکات امتحانی
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- یوتیوب -->
+          <a
+            class="link-card card-youtube"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">▶️</div>
+            <div class="link-card-body">
+              <div class="link-card-title">یوتیوب</div>
+              <div class="link-card-desc">
+                ویدیوهای بلند آموزشی با کیفیت بالا و توضیحات کامل
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- آپارات -->
+          <a
+            class="link-card card-aparat"
+            href="https://aparat.com/0loum"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">🎬</div>
+            <div class="link-card-body">
+              <div class="link-card-title">آپارات</div>
+              <div class="link-card-desc">
+                تماشای ویدیوها با ترافیک نیم‌بها برای کاربران ایرانی
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- ایتا -->
+          <a
+            class="link-card card-eitaa"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">✉️</div>
+            <div class="link-card-body">
+              <div class="link-card-title">ایتا</div>
+              <div class="link-card-desc">
+                کانال آموزشی در پیام‌رسان ایتا | محتوای اختصاصی
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- بله -->
+          <a
+            class="link-card card-bale"
+            href="https://ble.ir/Ch_0loum"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">💬</div>
+            <div class="link-card-body">
+              <div class="link-card-title">بله</div>
+              <div class="link-card-desc">
+                کانال علوم از صفر در پیام‌رسان بله
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- روبیکا -->
+          <a
+            class="link-card card-rubika"
+            href="https://rubika.ir/ch_0loum"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">📱</div>
+            <div class="link-card-body">
+              <div class="link-card-title">روبیکا</div>
+              <div class="link-card-desc">
+                محتوای تعاملی در روبیکا | روبینو، روبیکا و بخش‌های دیگر
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- واتساپ -->
+          <a
+            class="link-card card-whatsapp"
+            href="https://wa.me/989000000000"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link-card-icon">🟢</div>
+            <div class="link-card-body">
+              <div class="link-card-title">واتساپ</div>
+              <div class="link-card-desc">
+                ارتباط مستقیم و پرسش‌وپاسخ از طریق واتساپ
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- ایمیل -->
+          <a
+            class="link-card card-email"
+            href="mailto:Khanepaye.0loum@gmail.com"
+          >
+            <div class="link-card-icon">✉️</div>
+            <div class="link-card-body">
+              <div class="link-card-title">ایمیل</div>
+              <div class="link-card-desc">Khanepaye.0loum@gmail.com</div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
+
+          <!-- سایت اصلی -->
+          <a class="link-card card-website" href="https://0loum.ir">
+            <div class="link-card-icon">🌐</div>
+            <div class="link-card-body">
+              <div class="link-card-title">سایت اصلی</div>
+              <div class="link-card-desc">
+                کتابخانه کامل محتوا، جزوه‌ها و ویدیوهای آموزشی | 0loum.ir
+              </div>
+            </div>
+            <span class="link-card-arrow" aria-hidden="true">←</span>
+          </a>
         </div>
-      </section>
+        <!-- /.links-list -->
 
-      <section class="section" id="tracks">
-        <div class="wrap">
-          <h2 class="section-title">مسیرهای یادگیری</h2>
-          <p class="section-subtitle">
-            هر پایه مسیر اختصاصی خودش را دارد؛ از مفاهیم پایه تا مرورهای
-            آزمون‌محور.
+        <!-- متن انتهایی -->
+        <div class="links-footer-note">
+          <p>
+            سوالی دارید؟ از طریق
+            <a href="https://0loum.ir/contact.html">فرم تماس</a>
+            یا شبکه‌های اجتماعی بالا با ما در ارتباط باشید.
           </p>
-          <div class="grade-grid">
-            <article class="grade-card reveal">
-              <h3>پایه هفتم</h3>
-              <p>
-                شروع جذاب با مفاهیم بنیادی، آزمایش‌های ساده و تقویت مهارت مشاهده
-                و تحلیل.
-              </p>
-              <a class="btn btn-ghost" href="library.html?path=grade-7"
-                >مشاهده محتوا</a
-              >
-            </article>
-            <article class="grade-card reveal">
-              <h3>پایه هشتم</h3>
-              <p>
-                ترکیب مفاهیم پیچیده‌تر با تمرین‌های طبقه‌بندی‌شده برای تثبیت
-                مطالب.
-              </p>
-              <a class="btn btn-ghost" href="library.html?path=grade-8"
-                >مشاهده محتوا</a
-              >
-            </article>
-            <article class="grade-card reveal">
-              <h3>پایه نهم</h3>
-              <p>
-                مرور کامل سال‌های گذشته + آمادگی هدفمند برای امتحانات پایان ترم.
-              </p>
-              <a class="btn btn-ghost" href="library.html?path=grade-9"
-                >مشاهده محتوا</a
-              >
-            </article>
-          </div>
         </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap">
-          <h2 class="section-title">نمونه‌ای از رسانه‌ها</h2>
-          <p class="section-subtitle">
-            گزیده‌ای از محتواهای پرطرفدار برای شروع سریع.
-          </p>
-          <div class="media-grid">
-            <article class="media-card reveal">
-              <span>ویدیو 12 دقیقه‌ای</span>
-              <h4>نیروهای وارد بر جسم در حرکت</h4>
-              <p>
-                تحلیل قدم‌به‌قدم نیروها با انیمیشن‌های ساده و مثال‌های ملموس.
-              </p>
-              <div class="actions">
-                <a class="btn btn-primary" href="video-player.html?id=forces-1"
-                  >پخش ویدیو</a
-                >
-                <a
-                  class="btn btn-ghost"
-                  href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(1).pdf"
-                  >جزوه مرتبط</a
-                >
-              </div>
-              <div class="tag">پایه هشتم</div>
-            </article>
-            <article class="media-card reveal">
-              <span>جزوه 8 صفحه‌ای</span>
-              <h4>چرخه‌های مواد در طبیعت</h4>
-              <p>خلاصه درس + سوالات پرتکرار امتحانی برای مرور سریع.</p>
-              <div class="actions">
-                <a
-                  class="btn btn-primary"
-                  href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(2).pdf"
-                  >دانلود جزوه</a
-                >
-                <a
-                  class="btn btn-ghost"
-                  href="library.html?path=grade-7&type=notes"
-                  >جزوه‌های بیشتر</a
-                >
-              </div>
-              <div class="tag">پایه هفتم</div>
-            </article>
-            <article class="media-card reveal">
-              <span>ویدیو 18 دقیقه‌ای</span>
-              <h4>الکتریسیته و مدارها</h4>
-              <p>ترکیب مفاهیم با تمرین‌های حل‌شده و نکات امتحانی.</p>
-              <div class="actions">
-                <a
-                  class="btn btn-primary"
-                  href="video-player.html?id=static-electricity"
-                  >پخش ویدیو</a
-                >
-                <a
-                  class="btn btn-ghost"
-                  href="assets/downloads/کاربرگ%20علوم%20هفتم%20فصل%20(7).pdf"
-                  >جزوه مرتبط</a
-                >
-              </div>
-              <div class="tag">پایه هفتم</div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap">
-          <h2 class="section-title">سوالات پرتکرار</h2>
-          <div class="faq">
-            <details class="reveal">
-              <summary>چطور به محتواها دسترسی پیدا کنم؟</summary>
-              <p>
-                کافی است وارد کتابخانه شوید و بر اساس پایه و موضوع، ویدیو یا
-                جزوه موردنظر را انتخاب کنید.
-              </p>
-            </details>
-            <details class="reveal">
-              <summary>آیا محتواها مطابق آخرین کتاب درسی است؟</summary>
-              <p>
-                بله، همه منابع بر اساس آخرین تغییرات کتاب علوم متوسطه اول تدوین
-                شده‌اند.
-              </p>
-            </details>
-            <details class="reveal">
-              <summary>چطور سوالاتم را مطرح کنم؟</summary>
-              <p>
-                از طریق فرم تماس یا پیام‌رسان‌های معرفی‌شده می‌توانید سوالات خود
-                را ارسال کنید.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap">
-          <div class="cta reveal">
-            <h2>آماده‌ای مسیر یادگیریت رو شروع کنی؟</h2>
-            <p>به کتابخانه خان‌پایه برو و اولین درس را همین امروز ببین.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="library.html"
-                >ورود به کتابخانه</a
-              >
-              <a class="btn btn-ghost" href="contact.html">درخواست مشاوره</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="wrap">
-        <div class="footer-grid">
-          <div>
-            <h4>علوم از صفر</h4>
-            <p>
-              پلتفرم آموزش علوم متوسطه اول؛ ویدئوهای آموزشی، جزوه‌های
-              طبقه‌بندی‌شده و تمرین‌های هدفمند.
-            </p>
-          </div>
-          <div>
-            <h4>دسترسی سریع</h4>
-            <a href="library.html">کتابخانه</a>
-            <a href="about.html">درباره دبیر</a>
-            <a href="contact.html">ارتباط</a>
-          </div>
-          <div>
-            <h4>راه‌های ارتباطی</h4>
-            <a href="mailto:Khanepaye.0loum@gmail.com"
-              >Khanepaye.0loum@gmail.com</a
-            >
-            <a href="tel:+989000000000">+98 900 000 0000</a>
-            <a><span>هرمزگان، بندرعباس</span></a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>© <span data-year></span> خان‌پایه. همه حقوق محفوظ است.</span>
-          <span>زیرا که به عدالت آموزشی سوگند خورده‌ایم.</span>
-        </div>
+    <!-- فوتر -->
+    <footer class="links-page-footer">
+      <div>
+        <span>© <span data-year></span> خان‌پایه. همه حقوق محفوظ است.</span>
+        <span>زیرا که به عدالت آموزشی سوگند خورده‌ایم.</span>
       </div>
     </footer>
 
-    <script src="assets/JS/main.js"></script>
+    <!-- اسکریپت‌ها -->
+    <script>
+      // تنظیم سال جاری در فوتر
+      document.querySelector("[data-year]").textContent =
+        new Date().getFullYear();
+      // (اختیاری) اگر می‌خواهید Plausible Analytics روی ساب‌دامین هم کار کند،
+      // خط زیر را از حالت کامنت خارج کرده و data-domain را به‌روز کنید:
+      //
+      // var p = document.createElement('script');
+      // p.defer = true;
+      // p.setAttribute('data-domain', 'links.0loum.ir');
+      // p.src = 'https://plausible.io/js/script.js';
+      // document.head.appendChild(p);
+    </script>
   </body>
 </html>

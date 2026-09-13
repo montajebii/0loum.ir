@@ -24,11 +24,6 @@
     "ast_hash": "f44c7efc76b9516e5b368c3b2fd86f86",
     "semantic_hash": ""
   },
-  ".github/workflows/static.yml": {
-    "mtime": 1784562270.5894923,
-    "ast_hash": "d66309e41bc054f44e059e4604d388a8",
-    "semantic_hash": ""
-  },
   "404.html": {
     "mtime": 1784562270.5934923,
     "ast_hash": "ae36498b405a0fbdcf645c5cb188c57e",
@@ -50,8 +45,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1789257708.7154589,
-    "ast_hash": "bbe629b148058f0c60d2b992287613f5",
+    "mtime": 1789258649.319033,
+    "ast_hash": "4deda5686452f2193a7ba7908e6dc542",
     "semantic_hash": ""
   },
   "library.html": {
