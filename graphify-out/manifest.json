@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1784562271.9134936,
-    "ast_hash": "4deda5686452f2193a7ba7908e6dc542",
+    "mtime": 1789257708.7154589,
+    "ast_hash": "bbe629b148058f0c60d2b992287613f5",
     "semantic_hash": ""
   },
   "library.html": {
@@ -267,6 +267,36 @@
   "assets/images/og-image.jpg": {
     "mtime": 1771706959.0544198,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "landing/index.html": {
+    "mtime": 1789257644.329697,
+    "ast_hash": "8991da7e38eabd1f0aa435de585fedfb",
+    "semantic_hash": ""
+  },
+  "landing/apple-touch-icon.png": {
+    "mtime": 1789257644.33791,
+    "ast_hash": "7ef449bfd49110a7ff557bd49b718192",
+    "semantic_hash": ""
+  },
+  "landing/favicon-96x96.png": {
+    "mtime": 1789257644.336612,
+    "ast_hash": "5be9c3916c446347d3c3785cb48911d9",
+    "semantic_hash": ""
+  },
+  "landing/favicon.svg": {
+    "mtime": 1789257644.3354886,
+    "ast_hash": "901ba0f0545cfdb4135edaa6214120d8",
+    "semantic_hash": ""
+  },
+  "landing/web-app-manifest-192x192.png": {
+    "mtime": 1789257644.3394651,
+    "ast_hash": "c5371387a1ba71ccf174fc0814c356b2",
+    "semantic_hash": ""
+  },
+  "landing/web-app-manifest-512x512.png": {
+    "mtime": 1789257644.341182,
+    "ast_hash": "63d66d55899f81e27f0fdebe4407bf5b",
     "semantic_hash": ""
   }
 }
