@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>شبکه‌های اجتماعی | علوم از صفر</title>
+    <title>شبکه‌های اجتماعی علوم از صفر | 0loum.ir</title>
     <meta
       name="description"
-      content="تمام راه‌های ارتباطی و شبکه‌های اجتماعی علوم از صفر در یک صفحه؛ ما را در پیام‌رسان‌ها و پلتفرم‌های مختلف دنبال کنید."
+      content="تمام راه‌های ارتباطی و شبکه‌های اجتماعی علوم از صفر در یک صفحه؛ دنبال ما در پیام‌رسان‌ها و پلتفرم‌های مختلف برای آموزش علوم متوسطه اول."
     />
+    <meta property="og:title" content="شبکه‌های اجتماعی علوم از صفر | 0loum.ir">
+    <meta property="og:description" content="تمام راه‌های ارتباطی و شبکه‌های اجتماعی علوم از صفر در یک صفحه؛ دنبال ما در پیام‌رسان‌ها و پلتفرم‌های مختلف برای آموزش علوم متوسطه اول.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://links.0loum.ir">
+    <meta property="og:image" content="https://links.0loum.ir/assets/images/icons/favicon-96x96.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="شبکه‌های اجتماعی علوم از صفر | 0loum.ir">
+    <meta name="twitter:description" content="تمام راه‌های ارتباطی و شبکه‌های اجتماعی علوم از صفر در یک صفحه؛ دنبال ما در پیام‌رسان‌ها و پلتفرم‌های مختلف برای آموزش علوم متوسطه اول.">
     <meta name="author" content="خان‌پایه" />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#0f6a5f" />
@@ -408,6 +416,20 @@
         .links-main {
           padding: 28px 0 40px;
         }
+
+        /* Ensure all link cards are visible on mobile */
+        .link-card.card-telegram,
+        .link-card.card-instagram,
+        .link-card.card-youtube,
+        .link-card.card-aparat,
+        .link-card.card-eitaa,
+        .link-card.card-bale,
+        .link-card.card-rubika,
+        .link-card.card-whatsapp,
+        .link-card.card-email,
+        .link-card.card-website {
+          display: block !important;
+        }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -509,6 +531,7 @@
             href="https://t.me/0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Telegram channel for 0loum"
           >
             <div class="link-card-icon">📬</div>
             <div class="link-card-body">
@@ -523,9 +546,10 @@
           <!-- اینستاگرام -->
           <a
             class="link-card card-instagram"
-            href="#"
+            href="https://instagram.com/0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram page for 0loum"
           >
             <div class="link-card-icon">📷</div>
             <div class="link-card-body">
@@ -540,9 +564,10 @@
           <!-- یوتیوب -->
           <a
             class="link-card card-youtube"
-            href="#"
+            href="https://youtube.com/channel/UC0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="YouTube channel for 0loum"
           >
             <div class="link-card-icon">▶️</div>
             <div class="link-card-body">
@@ -560,6 +585,7 @@
             href="https://aparat.com/0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Aparat channel for 0loum"
           >
             <div class="link-card-icon">🎬</div>
             <div class="link-card-body">
@@ -574,9 +600,10 @@
           <!-- ایتا -->
           <a
             class="link-card card-eitaa"
-            href="#"
+            href="https://eitaa.ir/0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Eitaa channel for 0loum"
           >
             <div class="link-card-icon">✉️</div>
             <div class="link-card-body">
@@ -594,6 +621,7 @@
             href="https://ble.ir/Ch_0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Bale channel for 0loum"
           >
             <div class="link-card-icon">💬</div>
             <div class="link-card-body">
@@ -611,6 +639,7 @@
             href="https://rubika.ir/ch_0loum"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Rubika channel for 0loum"
           >
             <div class="link-card-icon">📱</div>
             <div class="link-card-body">
@@ -628,6 +657,7 @@
             href="https://wa.me/989000000000"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="WhatsApp contact for 0loum"
           >
             <div class="link-card-icon">🟢</div>
             <div class="link-card-body">
@@ -643,6 +673,7 @@
           <a
             class="link-card card-email"
             href="mailto:Khanepaye.0loum@gmail.com"
+            aria-label="Send email to Khanepaye.0loum@gmail.com"
           >
             <div class="link-card-icon">✉️</div>
             <div class="link-card-body">
@@ -653,7 +684,11 @@
           </a>
 
           <!-- سایت اصلی -->
-          <a class="link-card card-website" href="https://0loum.ir">
+          <a
+            class="link-card card-website"
+            href="https://0loum.ir"
+            aria-label="Visit the main 0loum website"
+          >
             <div class="link-card-icon">🌐</div>
             <div class="link-card-body">
               <div class="link-card-title">سایت اصلی</div>
@@ -690,14 +725,12 @@
       // تنظیم سال جاری در فوتر
       document.querySelector("[data-year]").textContent =
         new Date().getFullYear();
-      // (اختیاری) اگر می‌خواهید Plausible Analytics روی ساب‌دامین هم کار کند،
-      // خط زیر را از حالت کامنت خارج کرده و data-domain را به‌روز کنید:
-      //
-      // var p = document.createElement('script');
-      // p.defer = true;
-      // p.setAttribute('data-domain', 'links.0loum.ir');
-      // p.src = 'https://plausible.io/js/script.js';
-      // document.head.appendChild(p);
+      // Enable Plausible Analytics for tracking user behavior
+      var p = document.createElement('script');
+      p.defer = true;
+      p.setAttribute('data-domain', 'links.0loum.ir');
+      p.src = 'https://plausible.io/js/script.js';
+      document.head.appendChild(p);
     </script>
   </body>
 </html>
