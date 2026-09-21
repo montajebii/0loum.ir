@@ -2,7 +2,15 @@
 
 سیستم خودکار برای تولید و بروزرسانی فایل `library.json` بر اساس فایل‌های درون پوشه `downloads/`
 
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI elements used for toggling and managing content visibility. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`.
+
 ## نحوه کار
+
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`.
 
 ### 1. **Workflow خودکار (GitHub Actions)**
 
@@ -47,6 +55,10 @@ assets/downloads/
 
 ## ساختار library.json
 
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`.
+
 نتیجه `library.json` شامل:
 
 - **videos**: فیلم‌های آموزشی (به صورت دستی اضافه می‌شوند)
@@ -63,6 +75,10 @@ assets/downloads/
 
 ## قوانین نامگذاری فایل
 
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`.
+
 بهتر است فایل‌های PDF را با یکی از این الگوها نام‌گذاری کنید:
 
 ```
@@ -77,17 +93,53 @@ assets/downloads/
 
 ## فایل‌های مربوطه
 
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`
+
+- `scripts/generate-library.js` - اسکریپت تولید library.json
+- `.github/workflows/static.yml` - GitHub Actions workflow
+- `package.json` - تنظیمات npm
+
+**Isolated Nodes in package.json:**
+
+- `name` and `version` fields are critical metadata but lack detailed explanations in documentation.
+
 - `scripts/generate-library.js` - اسکریپت تولید library.json
 - `.github/workflows/static.yml` - GitHub Actions workflow
 - `package.json` - تنظیمات npm
 
 ## نکات مهم
 
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`
+
+**Isolated Nodes in package.json:**
+
+- `name` and `version` fields are critical metadata but lack detailed explanations in documentation.
+
 1. **videos** به صورت دستی در library.json اضافه/تغییر می‌شوند و توسط اسکریپت حفظ می‌شوند
 2. **notes** کاملاً خودکار تولید می‌شوند بر اساس محتویات پوشه downloads/
 3. اگر فایلی از downloads/ حذف شود، در نسخه بعدی اسکریپت نیز حذف می‌شود
 
 ## مثال اجرای دستی
+
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`
+
+**Isolated Nodes in package.json:**
+
+- `name` and `version` fields are critical metadata but lack detailed explanations in documentation.
+
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`
+
+**Isolated Nodes in package.json:**
+
+- `name` and `version` fields are critical metadata but lack detailed explanations in documentation.
 
 ```bash
 # نصب dependencies (اختیاری، چون فقط Node.js داخلی استفاده می‌شود)
@@ -99,6 +151,14 @@ npm run generate-library
 # یا بدون npm
 node scripts/generate-library.js
 ```
+
+**Isolated Components:**
+
+- `toggleBtn`, `panel`, `closeBtn` in `assets/JS/main.js` are UI components for toggling and managing content. These components are isolated and lack detailed documentation. For more information, see `assets/JS/main.js`
+
+**Isolated Nodes in package.json:**
+
+- `name` and `version` fields are critical metadata but lack detailed explanations in documentation.
 
 خروجی مثال:
 

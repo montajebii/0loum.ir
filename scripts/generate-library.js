@@ -103,8 +103,19 @@ function generateLibrary() {
 }
 
 /**
- * Read existing library.json and merge with new data
- * Preserves videos and merges notes intelligently
+ * Read existing library.json and merge with new data.
+ *
+ * @param {string} existingPath - Path to the existing library.json file.
+ * @param {Object} newLibrary - New library data to merge with existing.
+ *
+ * Behavior:
+ * - Preserves existing videos (manually curated) without modification.
+ * - Overwrites existing notes with new data from the downloads directory.
+ * - If existing library.json cannot be parsed, creates a new one.
+ * - If no existing library.json is found, creates a new one.
+ *
+ * Note: This function overwrites existing notes without warning. Ensure that
+ *       the script is run in a controlled environment to avoid unintended data loss.
  */
 function mergeLibraries(existingPath, newLibrary) {
   let existing = { videos: [], notes: [] };
@@ -137,7 +148,16 @@ function mergeLibraries(existingPath, newLibrary) {
 }
 
 /**
- * Main execution
+ * Main execution function.
+ *
+ * Steps:
+ * 1. Scans the downloads directory for PDF files.
+ * 2. Generates new library data from the files.
+ * 3. Merges new data with existing library.json, preserving manually curated videos.
+ * 4. Writes the final library.json file.
+ *
+ * Note: This function overwrites existing notes. Ensure that the script is run in a controlled
+ *       environment to avoid unintended data loss.
  */
 function main() {
   try {
