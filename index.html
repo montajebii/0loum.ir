@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://0loum.ir" />
     <meta
       property="og:image"
-      content="https://0loum.ir/assets/images/hero.jpg"
+      content="https://0loum.ir/assets/images/icons/favicon.svg"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="سهیل خانه‌پایه | علوم از صفر" />
@@ -79,6 +79,13 @@
         padding: 0;
         box-sizing: border-box;
       }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
       body {
         font-family: "Vazirmatn", sans-serif;
         background: var(--bg);
@@ -183,14 +190,20 @@
         border: 4px solid var(--bg);
         box-shadow: 0 12px 42px -8px rgba(35, 166, 147, 0.5);
         transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.4);
+        display: grid;
+        place-items: center;
+        background: #062b26;
       }
       .avatar:hover .pic {
         transform: scale(1.06) rotate(-3deg);
       }
-      .pic svg {
+      .pic svg,
+      .pic img {
         width: 100%;
         height: 100%;
         display: block;
+        object-fit: cover;
+        object-position: center;
       }
       .status {
         position: absolute;
@@ -240,6 +253,7 @@
       .brandpill svg {
         width: 26px;
         height: 13px;
+        flex: 0 0 auto;
       }
       .bio {
         color: var(--muted);
@@ -311,6 +325,7 @@
 
       .icon {
         flex: 0 0 48px;
+        width: 48px;
         height: 48px;
         border-radius: 14px;
         display: grid;
@@ -325,9 +340,14 @@
       .link:hover .icon {
         transform: rotate(-8deg) scale(1.1);
       }
-      .icon svg {
+      .icon svg,
+      .icon img {
         width: 30px;
         height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+        object-fit: contain;
+        display: block;
       }
 
       .txts {
@@ -366,14 +386,16 @@
       .vpn svg {
         width: 11px;
         height: 11px;
-        stroke: currentColor;
         flex: 0 0 auto;
+        fill: none;
+        stroke: currentColor;
         animation: vpnpulse 2.6s ease-in-out infinite;
       }
 
       /* کاشی عنصر شیمیایی: عدد اتمی = ۰ (علوم از صفر!) */
       .elem {
         flex: 0 0 44px;
+        width: 44px;
         height: 52px;
         border-radius: 10px;
         position: relative;
@@ -419,6 +441,22 @@
         --brand-light: #b8ffd9;
         --glow: rgba(37, 196, 110, 0.4);
         --iconbg: linear-gradient(135deg, #2fd3a5, #0f9f7a);
+      }
+      /* ✅ لوگوی بله سفید شود */
+      .l-bale .icon img {
+        filter: brightness(0) invert(1);
+        width: 26px;
+        height: 26px;
+        max-width: 26px;
+        max-height: 26px;
+      }
+      /* ✅ لوگوی اینستاگرام سفید شود */
+      .l-insta .icon img {
+        filter: brightness(0) invert(1);
+        width: 28px;
+        height: 28px;
+        max-width: 28px;
+        max-height: 28px;
       }
       .l-aparat {
         --brand: #ec1067;
@@ -483,6 +521,8 @@
       .btn svg {
         width: 17px;
         height: 17px;
+        flex: 0 0 auto;
+        fill: none;
         stroke: var(--amber);
       }
 
@@ -526,7 +566,7 @@
       .mo-divider {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 0; /* حذف فاصله تا تصویر به خطوط بچسبد */
         margin: 30px 0 14px;
         animation: rise 0.7s 1s both;
       }
@@ -537,13 +577,19 @@
         height: 1px;
         background: var(--line);
       }
-      .mo-divider svg {
-        width: 64px;
-        height: 30px;
+      /* ✅ بزرگتر و چسبیده به خطوط */
+      .mo-divider svg,
+      .mo-divider img {
+        height: 80px; /* افزایش ارتفاع */
+        width: auto; /* حفظ تناسب */
+        max-width: 300px; /* جلوگیری از خیلی پهن شدن */
+        flex: 0 0 auto;
+        object-fit: contain;
         cursor: pointer;
         transition: transform 0.3s;
       }
-      .mo-divider svg.wiggle {
+      .mo-divider svg.wiggle,
+      .mo-divider img.wiggle {
         animation: wiggle 0.7s ease;
       }
       footer {
@@ -676,8 +722,13 @@
           <div class="orbit"></div>
           <div class="orbit o2"></div>
           <div class="pic">
-            <!-- ✏️ برای لوگوی اصلی: این <svg> را پاک کن و بنویس <img src="logo.png" alt="لوگوی علوم از صفر"> -->
-            <img src="assets/images/hero.jpg" alt="لوگوی علوم از صفر" />
+            <!-- ✏️ برای لوگوی اصلی: این <img> را عوض کن یا بنویس <img src="logo.png" alt="لوگوی علوم از صفر"> -->
+            <img
+              src="assets/images/icons/favicon.svg"
+              alt="لوگوی علوم از صفر"
+              width="118"
+              height="118"
+            />
           </div>
           <span class="status" title="آنلاین"></span>
         </div>
@@ -711,28 +762,14 @@
           rel="noopener"
           aria-label="کانال من در روبیکا"
         >
-          <span class="icon"
-            ><svg viewBox="0 0 64 64" aria-hidden="true">
-              <path fill="#8dc63f" d="M32 32 32 3 57 17.5Z" />
-              <path fill="#00a99d" d="M32 32 57 17.5 57 46.5Z" />
-              <path fill="#7f3f98" d="M32 32 57 46.5 32 61Z" />
-              <path fill="#ed145b" d="M32 32 32 61 7 46.5Z" />
-              <path fill="#f7941e" d="M32 32 7 46.5 7 17.5Z" />
-              <path fill="#2e3192" d="M32 32 7 17.5 32 3Z" />
-              <defs>
-                <linearGradient id="rbG" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#ff4d8d" />
-                  <stop offset="1" stop-color="#8b2fe0" />
-                </linearGradient>
-              </defs>
-              <path
-                fill="url(#rbG)"
-                d="M26 21h13a8 8 0 0 1 8 8v6a8 8 0 0 1-8 8h-6l-8 6 2-7a8 8 0 0 1-9-8v-6a8 8 0 0 1 8-8z"
-              />
-              <circle cx="26.5" cy="31" r="2.3" fill="#fff" />
-              <circle cx="32.5" cy="31" r="2.3" fill="#fff" />
-              <circle cx="38.5" cy="31" r="2.3" fill="#fff" /></svg
-          ></span>
+          <span class="icon">
+            <img
+              src="assets/images/icons/rubika-svg/logo-icon.svg"
+              alt="روبیکا"
+              width="30"
+              height="30"
+            />
+          </span>
           <span class="txts">
             <strong>روبیکا</strong><small>rubika.ir/ch_0loum</small>
             <span class="vpn"
@@ -758,19 +795,14 @@
           rel="noopener"
           aria-label="کانال من در بله"
         >
-          <span class="icon"
-            ><svg viewBox="0 0 64 64" aria-hidden="true">
-              <path fill="#fff" d="M34 12a22 22 0 1 1 0 44 22 22 0 0 1 0-44z" />
-              <path fill="#fff" d="M11 7l16 7-9 9z" />
-              <path
-                d="m25 34 6.5 6.5L45 27"
-                fill="none"
-                stroke="#0f9f7a"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg
-          ></span>
+          <span class="icon">
+            <img
+              src="assets/images/icons/bale-svgrepo-com.svg"
+              alt="بله"
+              width="30"
+              height="30"
+            />
+          </span>
           <span class="txts">
             <strong>بله</strong><small>ble.ir/ch_0loum</small>
             <span class="vpn"
@@ -796,19 +828,14 @@
           rel="noopener"
           aria-label="کانال من در آپارات"
         >
-          <span class="icon"
-            ><svg viewBox="0 0 64 64" aria-hidden="true">
-              <path
-                fill="#ec1067"
-                fill-rule="evenodd"
-                d="M22 8h20a14 14 0 0 1 14 14v20a14 14 0 0 1-14 14H22A14 14 0 0 1 8 42V22A14 14 0 0 1 22 8Zm33 24a23 23 0 1 1-46 0 23 23 0 0 1 46 0Z"
-              />
-              <path
-                fill="#ec1067"
-                fill-rule="evenodd"
-                d="M55 32a23 23 0 1 1-46 0 23 23 0 0 1 46 0Zm-24-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Zm15 0a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Zm-15 15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Zm15 0a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0ZM35 32a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-              /></svg
-          ></span>
+          <span class="icon">
+            <img
+              src="assets/images/icons/GraFa.ir {205-vector}/205-GraFa-4.png"
+              alt="آپارات"
+              width="30"
+              height="30"
+            />
+          </span>
           <span class="txts">
             <strong>آپارات</strong><small>aparat.com/0loum</small>
             <span class="vpn"
@@ -834,12 +861,14 @@
           rel="noopener"
           aria-label="پیج من در اینستاگرام"
         >
-          <span class="icon"
-            ><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-              <path
-                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.3-.1 1.7-.1 4.9-.1zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"
-              /></svg
-          ></span>
+          <span class="icon">
+            <img
+              src="assets/images/icons/instagram-svgrepo-com.svg"
+              alt="اینستاگرام"
+              width="30"
+              height="30"
+            />
+          </span>
           <span class="txts"
             ><strong>اینستاگرام</strong
             ><small>instagram.com/0loum.ir</small></span
@@ -875,22 +904,11 @@
       </div>
 
       <div class="mo-divider">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          viewBox="0 0 64 30"
-          title="علوم از صفر 😄"
-          aria-hidden="true"
-        >
-          <path
-            class="st0"
-            d="M45.5,52.8c-.3,0-.8.2-1.3.2-.3,0-.6,0-.8,0-.3,0-.6,0-.8-.1-11.3-.7-23.2,2-34,7.7,1.2-5.2,4.5-14.4,12.5-18.5,4.4-2.3,9.7-2.5,14.8-2.8,1.7,0,3.3-.2,4.9-.3h1.3c1.1,0,2.2.2,3,.5,1.8.8,2.7,2.4,2.5,4.9v2.2c.2,3.3,0,5.7-2.1,6.2Z"
-          />
-          <path
-            class="st0"
-            d="M91.4,60.6c-10.8-5.7-22.7-8.4-34-7.7-.2,0-.5,0-.8.1-.2,0-.5,0-.8,0-.5,0-1-.1-1.3-.2-2.1-.5-2.3-2.9-2.1-6.2v-2.2c-.2-2.6.7-4.2,2.5-4.9.8-.3,1.8-.5,3-.5h1.3c1.6,0,3.2.3,4.9.3,5.1.3,10.5.5,14.8,2.8,8.1,4.1,11.3,13.3,12.5,18.5Z"
-          />
-        </svg>
+        <img
+          id="mo"
+          src="assets/images/icons/solo.svg"
+          alt="لوگوی علوم از صفر"
+        />
       </div>
       <footer>
         © <span id="year">۱۴۰۵</span> · علوم از صفر · ساخته‌شده با
@@ -1027,11 +1045,14 @@
       );
 
       /* ایستراگ سبیل 😄 */
-      $("#mo").addEventListener("click", (e) => {
-        e.currentTarget.classList.remove("wiggle");
-        void e.currentTarget.offsetWidth;
-        e.currentTarget.classList.add("wiggle");
-      });
+      const mo = $("#mo");
+      if (mo) {
+        mo.addEventListener("click", (e) => {
+          e.currentTarget.classList.remove("wiggle");
+          void e.currentTarget.offsetWidth;
+          e.currentTarget.classList.add("wiggle");
+        });
+      }
     </script>
   </body>
 </html>
